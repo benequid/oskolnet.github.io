@@ -1,0 +1,182 @@
+@import url('https://fonts.cdnfonts.com/css/circe');
+@import url('https://fonts.cdnfonts.com/css/futura');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+:root {
+    --white-color: #fff;
+    --acsent-color: #263057;
+    --button-color: #6984F0;
+    --gray-color: #F1F2F4;
+    --first-linear: linear-gradient(136.49deg, #263057 25.34%, #1D1444 89.06%);
+    --second-linear: linear-gradient(92.37deg, #263057 29.38%, #1D1444 100.81%);
+    --third-linear: linear-gradient(180deg, #273158 0%, #0C244D 100%);
+}
+
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Circe', sans-serif;
+    color: var(--white-color);
+}
+
+.container {
+    max-width: 118rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 14.5rem;
+    padding: 2.5rem 2.5rem;
+    gap: 2.6rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 2.6rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--acsent-color);
+}
+
+.fast-connection {
+    display: flex;
+    flex-direction: row;
+}
+
+.fast-connection i {
+    color: var(--acsent-color);
+    font-size: 2.9rem;
+    font-family: "Iconly";
+}
+
+.fast-connection__phone {
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 1.7rem;
+    color: var(--acsent-color);
+}
+
+.fast-connection__text {
+    color: var(--acsent-color);
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    opacity: 0.5;
+}
+
+.header__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2.6rem;
+}
+
+.button {
+    outline: none;
+    border-radius: 3rem;
+    padding: 0.8rem 3rem;
+    border: 1px solid #6984F0;
+    background: var(--button-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.button_dark {
+    background: var(--acsent-color);
+    border: 1px solid var(--acsent-color);
+}
+
+.rate-selection {
+    background: var(--first-linear);
+    padding: 4.3rem 0;
+}
+
+.rate-selection__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white-color);
+    border-radius: 1.5rem;
+    padding-bottom: 6rem;
+}
+
+.rate-selection__title {
+    color: var(--acsent-color);
+    text-transform: uppercase;
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 6.2rem;
+    line-height: 5.6rem;
+}
+
+.rate-selection__subtitle {
+    color: var(--acsent-color);
+    font-size: 4.4rem;
+    line-height: 4.0rem;
+}
+
+.rate-selection__button {
+    margin-top: 2.8rem;
+    padding: 1rem 4.6rem;
+    font-size: 2rem;
+    color: var(--white-color);
+    font-family: 'Circe Bold', sans-serif;
+    box-shadow: 1rem 1rem 2.8rem rgba(105, 132, 240, 0.2);
+}
+
+.rate-selection__content_left {
+    margin-left: 6.2rem;
+}
+
+.rate-selection__content_right img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-rates {
+    background: var(--gray-color);
+    padding-top: 5rem;
+}
+
+.home-rates__title {
+    text-align: center;
+    color: var(--acsent-color);
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 4.8rem;
+    line-height: 6.25rem;
+    text-transform: uppercase;
+}
+
+.home-rates__price-list {
+    background: var(--white-color);
+    padding-top: 5rem;
+    border-radius: 1.5rem;
+}
+
+.price-list__categories {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 11.1rem;
+}
+
+.categories__el {
+    color: var(--acsent-color);
+    line-height: 2.8rem;
+    font-size: 2rem;
+}
+
+.categories__el_active {
+    font-family: 'Circe Bold', sans-serif;
+}
